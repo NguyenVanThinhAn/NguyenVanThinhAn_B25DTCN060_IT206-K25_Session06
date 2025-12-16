@@ -1,0 +1,50 @@
+- Prompt 1
+- Viết code còn thiếu cho hàm fibonacciSum
+
+- Kết quả
+
+int fibonacciSum(int n){
+    int a = 0;
+    int b = 1;
+    int sum = 0;
+    while(b <= n){
+        sum += b;
+        int temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return sum;
+}
+
+- Prompt 2
+- Thêm test case với n bằng 0 1 10
+
+printf("%d\n", fibonacciSum(0));
+printf("%d\n", fibonacciSum(1));
+printf("%d\n", fibonacciSum(10));
+
+- Prompt 3
+- Refactor code để tối ưu hơn
+
+- Code refactor
+
+int fibonacciSum(int n){
+    int prev = 0;
+    int curr = 1;
+    int sum = 0;
+    while(curr <= n){
+        sum += curr;
+        int next = prev + curr;
+        prev = curr;
+        curr = next;
+    }
+    return sum;
+}
+
+- Prompt 4
+- Giải thích vì sao code refactor tốt hơn
+
+- Nhận xét
+- Tên biến rõ nghĩa hơn
+- Code dễ đọc hơn
+- Dễ bảo trì và mở rộng
