@@ -1,0 +1,30 @@
+- Prompt 1
+- Viết hàm C tính tổng các số lẻ nhỏ hơn n
+
+- Prompt 2
+- Viết hàm C tính tổng các số lẻ nhỏ hơn n có chú thích từng dòng và đặt tên biến rõ ràng
+
+- Code từ Prompt 1
+
+int sumOdd(int n){
+    int s = 0;
+    for(int i = 1; i < n; i += 2){
+        s += i;
+    }
+    return s;
+}
+
+- Code từ Prompt 2
+
+int sumOdd(int n){
+    int tong = 0;
+    for(int so = 1; so < n; so += 2){
+        tong += so;
+    }
+    return tong;
+}
+
+- Nhận xét
+- Code 2 dễ đọc hơn
+- Tên biến có ý nghĩa
+- Phù hợp cho người mới học
