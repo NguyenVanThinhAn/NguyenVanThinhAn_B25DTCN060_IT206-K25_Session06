@@ -1,0 +1,23 @@
+- Hàm cần kiểm thử
+
+int isEven(int n) {
+    return n % 2 == 0;
+}
+
+- Prompt
+- Viết thêm các test case để kiểm thử hàm này bao gồm bình thường biên và bất thường
+
+- Test case do AI sinh
+
+printf("%d\n", isEven(2));
+printf("%d\n", isEven(3));
+printf("%d\n", isEven(0));
+printf("%d\n", isEven(-4));
+
+- Test case tự bổ sung
+- n rất lớn
+- n là số âm lẻ
+
+- So sánh
+- Test AI bao phủ trường hợp cơ bản
+- Test bổ sung giúp kiểm tra độ ổn định
