@@ -1,0 +1,32 @@
+- Code lỗi logic
+
+#include <stdio.h>
+int main() {
+    int n = 5;
+    int giai_thua = 0;
+    for (int i = 1; i <= n; i++) {
+        giai_thua = giai_thua * i;
+    }
+    printf("Giai thua cua %d la %d\n", n, giai_thua);
+    return 0;
+}
+
+- Prompt
+- Code chạy không báo lỗi nhưng ra kết quả sai hãy giải thích lỗi logic và sửa
+
+- Code sửa
+
+#include <stdio.h>
+int main() {
+    int n = 5;
+    int giai_thua = 1;
+    for (int i = 1; i <= n; i++) {
+        giai_thua = giai_thua * i;
+    }
+    printf("Giai thua cua %d la %d\n", n, giai_thua);
+    return 0;
+}
+
+- Giải thích bằng lời
+- Khởi tạo giai thừa bằng 0 là sai
+- Nhân với 0 làm kết quả luôn bằng 0
