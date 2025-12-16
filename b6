@@ -1,0 +1,27 @@
+- Code gốc
+
+#include <stdio.h>
+int main() {
+    int arr[3] = {1, 2, 3};
+    printf("%d\n", arr[3]);
+    return 0;
+}
+
+- Lỗi khi chạy
+- Runtime error có thể crash
+
+- Prompt
+- Hãy phân tích nguyên nhân lỗi từ stack trace giải thích bằng ngôn ngữ đơn giản và đưa ra bản sửa
+
+- Code đã sửa
+
+#include <stdio.h>
+int main() {
+    int arr[3] = {1, 2, 3};
+    printf("%d\n", arr[2]);
+    return 0;
+}
+
+- Giải thích
+- arr[3] vượt quá phạm vi mảng
+- Chỉ số hợp lệ là 0 đến 2
