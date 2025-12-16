@@ -1,0 +1,10 @@
+- Prompt 1
+- Sửa lỗi Segmentation fault
+
+- Prompt 2
+- Giải thích chi tiết tại sao xảy ra lỗi Segmentation fault minh họa bằng sơ đồ bộ nhớ và sửa lỗi
+
+- So sánh
+- Prompt 1 chỉ đưa ra cách sửa nhanh
+- Prompt 2 giúp hiểu bản chất lỗi
+- Prompt chi tiết giúp tránh lặp lại lỗi tương tự
