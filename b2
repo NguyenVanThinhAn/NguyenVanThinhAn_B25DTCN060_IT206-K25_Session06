@@ -1,0 +1,35 @@
+- Prompt 1
+- Viết hàm C kiểm tra số nguyên tố có chú thích từng bước đầu vào là số nguyên dương n
+
+- Prompt 2
+- Viết hàm C kiểm tra số nguyên tố
+
+- Kết quả từ Prompt 1
+
+int isPrime(int n){
+    if(n < 2){
+        return 0;
+    }
+    for(int i = 2; i * i <= n; i++){
+        if(n % i == 0){
+            return 0;
+        }
+    }
+    return 1;
+}
+
+- Kết quả từ Prompt 2
+
+int isPrime(int n){
+    for(int i = 2; i < n; i++){
+        if(n % i == 0){
+            return 0;
+        }
+    }
+    return 1;
+}
+
+- So sánh
+- Prompt 1 có kiểm tra điều kiện biên
+- Prompt 1 tối ưu hơn
+- Prompt 2 ngắn nhưng thiếu xử lý n < 2
