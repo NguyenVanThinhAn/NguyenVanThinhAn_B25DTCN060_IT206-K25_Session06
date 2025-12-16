@@ -1,0 +1,17 @@
+- Code lỗi
+
+int a[3];
+printf("%d", a[5]);
+
+- Lỗi khi chạy
+- Segmentation fault core dumped
+
+- Prompt
+- Đây là lỗi khi chạy code C Segmentation fault core dumped hãy phân tích nguyên nhân và gợi ý sửa lỗi
+
+- AI giải thích
+- Truy cập vùng nhớ ngoài phạm vi mảng
+- Gây lỗi truy cập bộ nhớ
+
+- Cách sửa
+- Chỉ truy cập chỉ số từ 0 đến 2
